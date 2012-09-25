@@ -1,0 +1,10 @@
+goog.provide('domina.support');
+goog.require('cljs.core');
+goog.require('goog.events');
+goog.require('goog.dom');
+var div__11279 = document.createElement("div");
+var test_html__11280 = "   <link/><table></table><a href='/a' style='top:1px;float:left;opacity:.55;'>a</a><input type='checkbox'/>";
+div__11279.innerHTML = test_html__11280;
+domina.support.leading_whitespace_QMARK_ = cljs.core._EQ_.cljs$lang$arity$2(div__11279.firstChild.nodeType,3);
+domina.support.extraneous_tbody_QMARK_ = cljs.core._EQ_.cljs$lang$arity$2(div__11279.getElementsByTagName("tbody").length,0);
+domina.support.unscoped_html_elements_QMARK_ = cljs.core._EQ_.cljs$lang$arity$2(div__11279.getElementsByTagName("link").length,0);
